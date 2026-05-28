@@ -142,7 +142,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          gh release download ci-core-latest -p "kokuban_ci_core"
+          gh release download ci-core-latest -R YuzakiKokuban/Kokuban_Kernel_CI_Center -p "kokuban_ci_core"
           chmod +x kokuban_ci_core
 
       - name: Parse Configuration
